@@ -13,7 +13,7 @@ body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 30px;  
-    background-image: url('./images/main-bg.jpg'); 
+    background-image: url('../images/main-bg.jpg'); 
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 30%;
