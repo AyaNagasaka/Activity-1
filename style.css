@@ -4,22 +4,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    height: 100%;
+    height: auto;
     text-align: center;
     background-color: white;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 30px;  
     background-image: url('/images/main-bg.jpg'); 
-    background-position: 30%;
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: 30%;
+    
+    
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 
@@ -28,20 +31,25 @@ footer p span {
 }
 
 .container {
-    padding: 60px 70px ;
+    padding: 40px 70px ;
     
+}
+
+.text-header {
+    margin: 0 auto;
+    padding: 30px 40px 50px;
 }
 
 .flex-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 40px;  
     align-items: center;
 }
 
 .flex-group {
-    width: 70%;
+    width: 65%;
     background-color: white;
     border-radius: 10px;
     -webkit-border-radius: 20px;
@@ -79,7 +87,6 @@ h1 {
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 800;
-    margin: 10px 40px 60px;
     text-align: left;
 }
 
@@ -145,20 +152,16 @@ h3 {
     font-size: 20px;
 }
 
-@media screen {
-    
-}
-
 @media (min-width: 1200px) {
     body {
         background-image: none;
     }
 
     .container {
-        margin: 100px 245px;
-        padding: 120px 110px ;
+        width: 60%;
+        margin: 90px auto;
+        padding: 100px;
         position: relative;
-        
     }
 
     .container::before {
@@ -183,17 +186,17 @@ h3 {
     h1 {
         position: relative;
         font-size: 2.8em;
-        margin-left: 15%;
     }
 
     .flex-container {
         position: relative;
         flex-direction: row;
         justify-content: space-around;
+        gap: 50px;
     }
 
     .flex-group {
-        width: 23%;
+        width: 30%;
         background-color: white;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -260,7 +263,7 @@ h3 {
     }
 
     .text p {
-        font-size: 7px;
+        font-size: 6px;
         padding-top: 5px;
         padding-left: 2px;
     }
@@ -271,5 +274,15 @@ h3 {
 
     footer p {
         color:#707070;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        padding-left: 60px;
+    }
+
+    .flex-group {
+        width: 25%;
     }
 }
